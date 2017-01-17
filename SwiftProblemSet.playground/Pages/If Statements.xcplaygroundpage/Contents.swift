@@ -69,11 +69,11 @@ func release() {
 }
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
-    if bugs <= 10 && music && numberOfLevels >= 5 {
+    if bugs < 10 && music && numberOfLevels > 5 {
         release()
     }
     
-    if bugs > 10 {
+    if bugs >= 10 {
         print("fix bugs")
     }
     
@@ -81,7 +81,7 @@ func checkForRelease(bugs: Int, music: Bool, levels: Int) {
         print("Game needs music")
     }
     
-    if levels < 5 {
+    if levels <= 5 {
         print("more levels need to be added")
     }
 }
