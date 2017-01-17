@@ -90,20 +90,13 @@ func beginsWithVowel(_ name: String) -> Bool /* define the return type */ {
 func funWithWords(_ name: String) -> String /* define the return type */ {
     /* add function implementation here */
     let name = name
-    let vowels = ["a", "e", "i", "o", "u"]
-    if name != "" {
-        let firstCharacter = name.lowercased().characters[name.startIndex]
-        print(firstCharacter)
-        
-        if vowels.contains(String(firstCharacter)) {
-            return name.uppercased()
-        }
-        else {
-            return name.lowercased()
-        }
-    }
     
-    return name
+    if beginsWithVowel(name) {
+        return name.uppercased()
+    }
+    else {
+        return name.lowercased()
+    }
 }
 
 //Example Function Call

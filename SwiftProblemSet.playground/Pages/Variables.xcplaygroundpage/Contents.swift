@@ -16,6 +16,7 @@
 
 var gallonsRemainingInTank:Double
 var ageOfSpecimenInWeeks:Int
+let birthplace:String
 let myFirstProgrammingLanguage: String
 
 //: ### Exercise 2
@@ -42,7 +43,7 @@ let reversedString = String(arrayOfCharacters)
 */
 var hungerLevel:Int
 let scoreRequired:Int
-var studentBirthday:String
+let studentBirthday:String
 var statusUpdate:String
 /*:
  ****
